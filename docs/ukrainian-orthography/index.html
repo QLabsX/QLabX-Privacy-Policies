@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy / Політика конфіденційності застосунку «Український правопис».">
+  <meta name="theme-color" content="#0b5d3b">
+  <title>Privacy Policy — Український правопис</title>
+  <style>
+    :root {
+      --bg: #f7f7f2;
+      --card: #ffffff;
+      --text: #17211b;
+      --muted: #5f6d64;
+      --green: #0b5d3b;
+      --green-dark: #08462d;
+      --blue: #1d5fa7;
+      --gold: #d9a441;
+      --border: #dfe7e1;
+      --shadow: 0 14px 40px rgba(15, 46, 29, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(29,95,167,.08), transparent 28rem),
+        radial-gradient(circle at top right, rgba(217,164,65,.10), transparent 24rem),
+        var(--bg);
+      line-height: 1.68;
+    }
+
+    a { color: var(--blue); }
+
+    .wrap {
+      width: min(1100px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 54px 0 34px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0b5d3b 0%, #0a4c34 55%, #133b61 100%);
+      color: #fff;
+      border-radius: 26px;
+      padding: clamp(28px, 6vw, 58px);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "А Б В Г Ґ Д Е Є Ж З И І Ї Й";
+      position: absolute;
+      right: -10px;
+      bottom: -18px;
+      font-weight: 800;
+      font-size: clamp(28px, 7vw, 78px);
+      letter-spacing: .12em;
+      color: rgba(255,255,255,.06);
+      white-space: nowrap;
+      pointer-events: none;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 12px;
+      border: 1px solid rgba(255,255,255,.23);
+      border-radius: 999px;
+      background: rgba(255,255,255,.09);
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(32px, 5vw, 54px);
+      line-height: 1.08;
+      letter-spacing: -.03em;
+    }
+
+    .subtitle {
+      max-width: 790px;
+      margin: 0;
+      color: rgba(255,255,255,.86);
+      font-size: 17px;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      margin-top: 24px;
+      font-size: 14px;
+      color: rgba(255,255,255,.82);
+    }
+
+    .language-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 22px 0 0;
+    }
+
+    .language-nav a {
+      text-decoration: none;
+      color: #fff;
+      border: 1px solid rgba(255,255,255,.30);
+      background: rgba(255,255,255,.11);
+      padding: 9px 14px;
+      border-radius: 12px;
+      font-weight: 700;
+    }
+
+    main { padding-bottom: 56px; }
+
+    .notice {
+      margin: 0 0 22px;
+      padding: 18px 20px;
+      background: #fff9e9;
+      border: 1px solid #ecd79d;
+      border-radius: 18px;
+      color: #56431b;
+    }
+
+    .policy {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: clamp(24px, 5vw, 48px);
+      box-shadow: var(--shadow);
+      margin-bottom: 28px;
+    }
+
+    .policy h2 {
+      margin: 0 0 8px;
+      font-size: clamp(28px, 4vw, 38px);
+      color: var(--green-dark);
+    }
+
+    .policy h3 {
+      margin: 32px 0 10px;
+      font-size: 21px;
+      color: #173c2c;
+    }
+
+    .lead {
+      color: var(--muted);
+      font-size: 16.5px;
+      margin-top: 0;
+    }
+
+    ul { padding-left: 22px; }
+    li + li { margin-top: 7px; }
+
+    .no-data {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin: 18px 0;
+    }
+
+    .pill-card {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 14px 16px;
+      background: #fbfdfb;
+    }
+
+    .pill-card strong {
+      display: block;
+      color: var(--green-dark);
+      margin-bottom: 3px;
+    }
+
+    .contact {
+      margin-top: 30px;
+      padding: 20px;
+      border-radius: 18px;
+      background: #f0f7f3;
+      border: 1px solid #cfe1d5;
+    }
+
+    footer {
+      color: var(--muted);
+      text-align: center;
+      padding: 10px 0 42px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 720px) {
+      .wrap { width: min(100% - 20px, 1100px); }
+      header { padding-top: 18px; }
+      .hero, .policy { border-radius: 20px; }
+      .no-data { grid-template-columns: 1fr; }
+      .hero { padding: 28px 22px; }
+      .policy { padding: 26px 20px; }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0e1511;
+        --card: #151f19;
+        --text: #edf4ef;
+        --muted: #aab8af;
+        --border: #2a3b31;
+      }
+      body { background: #0e1511; }
+      .policy h2, .policy h3, .pill-card strong { color: #c8ead6; }
+      .pill-card { background: #101914; }
+      .notice { background: #2a2414; border-color: #5a4b21; color: #f0dda1; }
+      .contact { background: #11261a; border-color: #284b35; }
+      a { color: #8bbcff; }
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <section class="hero">
+      <div class="badge">Privacy Policy · Політика конфіденційності</div>
+      <h1>Український правопис</h1>
+      <p class="subtitle">Політика конфіденційності мобільного освітнього застосунку «Український правопис» / Privacy Policy for the “Ukrainian Orthography” mobile educational application.</p>
+      <div class="meta">
+        <span><strong>Дата набрання чинності / Effective date:</strong> 20 October 2026</span>
+        <span><strong>Контакт / Contact:</strong> <a href="mailto:belousx@gmail.com" style="color:#fff">belousx@gmail.com</a></span>
+      </div>
+      <nav class="language-nav" aria-label="Language navigation">
+        <a href="#uk">Українська</a>
+        <a href="#en">English</a>
+      </nav>
+    </section>
+  </header>
+
+  <main class="wrap">
+    <div class="notice">
+      <strong>Коротко / In short:</strong> застосунок працює за принципом privacy-first та offline-first. Він не вимагає створення облікового запису та не призначений для збору або продажу персональних даних. Навчальний прогрес, закладки, нотатки й результати тестів зберігаються локально на пристрої.
+    </div>
+
+    <article class="policy" id="uk" lang="uk">
+      <h2>Політика конфіденційності</h2>
+      <p class="lead">Ця Політика конфіденційності пояснює, як мобільний застосунок <strong>«Український правопис»</strong> обробляє інформацію користувача. Ми прагнемо мінімізувати обробку даних і використовувати лише ті можливості пристрою, які потрібні для роботи застосунку.</p>
+
+      <h3>1. Загальні положення</h3>
+      <p>«Український правопис» — освітній застосунок для читання правил українського правопису, пошуку матеріалів, створення закладок і нотаток, проходження тестів та відстеження навчального прогресу. Основний функціонал розрахований на локальну роботу на пристрої користувача.</p>
+
+      <h3>2. Які персональні дані ми збираємо</h3>
+      <p><strong>Застосунок не вимагає реєстрації та не збирає персональні дані користувача для роботи основних функцій.</strong> Зокрема, застосунок не запитує та не призначений для збирання:</p>
+      <div class="no-data">
+        <div class="pill-card"><strong>Ідентифікаційні дані</strong>ім’я, прізвище, дата народження, документи.</div>
+        <div class="pill-card"><strong>Контактні дані</strong>номер телефону, адреса, список контактів.</div>
+        <div class="pill-card"><strong>Точна геолокація</strong>GPS-координати або історія місцезнаходження.</div>
+        <div class="pill-card"><strong>Медіадані</strong>фото, відео або аудіо з камери чи мікрофона.</div>
+        <div class="pill-card"><strong>Облікові дані</strong>паролі або дані сторонніх акаунтів.</div>
+        <div class="pill-card"><strong>Рекламні профілі</strong>дані для персоналізованої реклами або продажу третім особам.</div>
+      </div>
+
+      <h3>3. Дані, що зберігаються локально на пристрої</h3>
+      <p>Для забезпечення навчальних функцій застосунок може зберігати безпосередньо на пристрої:</p>
+      <ul>
+        <li>закладки та обрані правила;</li>
+        <li>користувацькі нотатки;</li>
+        <li>історію та стан проходження навчальних тестів;</li>
+        <li>відповіді, результати, бали, досягнення та навчальний прогрес;</li>
+        <li>стан незавершеної навчальної сесії;</li>
+        <li>налаштування інтерфейсу, теми, мови та інші локальні параметри.</li>
+      </ul>
+      <p>Ці дані призначені для локальної роботи застосунку та не передаються розробнику через власні сервери застосунку. Видалення даних застосунку в налаштуваннях операційної системи або видалення самого застосунку може призвести до остаточного видалення локально збережених даних.</p>
+
+      <h3>4. Інтернет, аналітика та реклама</h3>
+      <p>Поточна модель застосунку не потребує створення онлайн-акаунта, не використовує власну систему рекламного профілювання та не передбачає продаж персональних даних. Застосунок також не потребує аналітики користувацької поведінки для роботи основних навчальних функцій.</p>
+      <p>Платформа розповсюдження застосунку та операційна система пристрою (наприклад, Google Play, Android або Apple App Store / iOS) можуть самостійно обробляти технічну, діагностичну або службову інформацію відповідно до власних правил і політик конфіденційності. Така обробка здійснюється відповідними платформами, а не цією Політикою.</p>
+
+      <h3>5. Дозволи пристрою</h3>
+      <p>Застосунок розроблено за принципом мінімальних дозволів. Для його основних освітніх функцій не потрібен доступ до камери, мікрофона, контактів, SMS, історії дзвінків або точної геолокації. Операційна система може надавати застосунку стандартне ізольоване сховище, необхідне для збереження локальних налаштувань і прогресу.</p>
+
+      <h3>6. Передавання даних третім сторонам</h3>
+      <p>Ми не продаємо, не здаємо в оренду та не передаємо персональні дані користувачів рекламодавцям або іншим стороннім організаціям. Оскільки основні навчальні дані зберігаються локально, розробник не отримує їх копію на власному сервері.</p>
+
+      <h3>7. Конфіденційність дітей</h3>
+      <p>Застосунок має освітнє призначення й може бути корисним для різних вікових груп. Він не призначений для свідомого збору персональної інформації дітей. Оскільки реєстрація не потрібна і персональні дані для основної роботи застосунку не запитуються, розробник не формує окремі профілі дітей.</p>
+
+      <h3>8. Зберігання та видалення даних</h3>
+      <p>Локальні дані зберігаються на пристрої до моменту їх видалення користувачем, очищення даних застосунку або видалення самого застосунку. Оскільки застосунок не створює власної серверної копії цих даних, розробник не може відновити локально видалені нотатки, закладки або прогрес.</p>
+
+      <h3>9. Безпека</h3>
+      <p>Ми використовуємо підхід мінімізації даних: не збирати те, що не потрібно. Локальне зберігання зменшує обсяг інформації, що передається через мережу. Водночас абсолютна безпека будь-якого програмного забезпечення не може бути гарантована, тому користувачеві слід застосовувати стандартні засоби захисту свого пристрою.</p>
+
+      <h3>10. Зміни до цієї Політики</h3>
+      <p>Політика може оновлюватися у разі зміни функцій застосунку, законодавчих вимог або способів обробки даних. Якщо в майбутньому до застосунку буде додано хмарну синхронізацію, рекламу, аналітику, онлайн-акаунти або інші мережеві функції, ця Політика повинна бути відповідно оновлена. Актуальна версія публікується на сторінці, де розміщено цей документ.</p>
+
+      <h3>11. Контакти</h3>
+      <div class="contact">
+        Якщо у вас є запитання щодо цієї Політики конфіденційності або обробки даних у застосунку, зв’яжіться з розробником:<br>
+        <strong>Email:</strong> <a href="mailto:belousx@gmail.com">belousx@gmail.com</a>
+      </div>
+    </article>
+
+    <article class="policy" id="en" lang="en">
+      <h2>Privacy Policy</h2>
+      <p class="lead">This Privacy Policy explains how the <strong>“Ukrainian Orthography”</strong> mobile application handles user information. We follow a data-minimization approach and use only the device capabilities necessary for the application to function.</p>
+
+      <h3>1. General</h3>
+      <p>“Ukrainian Orthography” is an educational application for reading Ukrainian orthography rules, searching learning materials, creating bookmarks and notes, completing quizzes, and tracking learning progress. Its core functionality is designed to work locally on the user’s device.</p>
+
+      <h3>2. Personal Data We Collect</h3>
+      <p><strong>The application does not require account registration and does not collect personal data in order to provide its core features.</strong> In particular, the application does not request or intentionally collect:</p>
+      <div class="no-data">
+        <div class="pill-card"><strong>Identity data</strong>name, surname, date of birth, or identity documents.</div>
+        <div class="pill-card"><strong>Contact data</strong>phone number, postal address, or contact list.</div>
+        <div class="pill-card"><strong>Precise location</strong>GPS coordinates or location history.</div>
+        <div class="pill-card"><strong>Media data</strong>photos, video, or audio from the camera or microphone.</div>
+        <div class="pill-card"><strong>Account credentials</strong>passwords or credentials for third-party accounts.</div>
+        <div class="pill-card"><strong>Advertising profiles</strong>data used for personalized advertising or sale to third parties.</div>
+      </div>
+
+      <h3>3. Data Stored Locally on the Device</h3>
+      <p>To provide learning features, the application may store the following information directly on the user’s device:</p>
+      <ul>
+        <li>bookmarks and selected rules;</li>
+        <li>user-created notes;</li>
+        <li>quiz history and quiz state;</li>
+        <li>answers, results, scores, achievements, and learning progress;</li>
+        <li>the state of an unfinished learning session;</li>
+        <li>interface settings, theme, language, and other local preferences.</li>
+      </ul>
+      <p>This information is intended for local application functionality and is not transmitted to the developer through the application’s own servers. Clearing the application’s data in the operating-system settings or uninstalling the application may permanently remove locally stored information.</p>
+
+      <h3>4. Internet, Analytics, and Advertising</h3>
+      <p>The current application model does not require an online account, does not use its own advertising-profiling system, and does not sell personal data. User-behavior analytics are not required for the application’s core educational functionality.</p>
+      <p>The application distribution platform and the device operating system (for example, Google Play, Android, Apple App Store, or iOS) may independently process technical, diagnostic, or service information under their own terms and privacy policies. Such processing is performed by those platform providers and is not governed by this Policy.</p>
+
+      <h3>5. Device Permissions</h3>
+      <p>The application is designed according to the principle of minimum permissions. Its core educational features do not require access to the camera, microphone, contacts, SMS messages, call history, or precise location. The operating system may provide the application with standard sandboxed storage required to save local settings and learning progress.</p>
+
+      <h3>6. Sharing Data with Third Parties</h3>
+      <p>We do not sell, rent, or provide users’ personal data to advertisers or other third parties. Because the core learning data is stored locally, the developer does not receive a server-side copy of that information.</p>
+
+      <h3>7. Children’s Privacy</h3>
+      <p>The application is educational and may be useful to people of different ages. It is not designed to knowingly collect personal information from children. Since registration is not required and personal data is not requested for the application’s core functionality, the developer does not create separate child profiles.</p>
+
+      <h3>8. Data Retention and Deletion</h3>
+      <p>Local data remains on the device until it is deleted by the user, the application data is cleared, or the application is uninstalled. Because the application does not create its own server copy of this local data, the developer cannot restore locally deleted notes, bookmarks, or progress.</p>
+
+      <h3>9. Security</h3>
+      <p>We apply a data-minimization approach: information that is not needed should not be collected. Local storage reduces the amount of information transmitted over a network. However, absolute security cannot be guaranteed for any software, so users should use the normal security features available on their devices.</p>
+
+      <h3>10. Changes to This Policy</h3>
+      <p>This Policy may be updated if application features, legal requirements, or data-processing practices change. If cloud synchronization, advertising, analytics, online accounts, or other network services are added in the future, this Policy should be updated accordingly. The current version will be published on the page where this document is hosted.</p>
+
+      <h3>11. Contact</h3>
+      <div class="contact">
+        If you have any questions about this Privacy Policy or how the application handles data, please contact the developer:<br>
+        <strong>Email:</strong> <a href="mailto:belousx@gmail.com">belousx@gmail.com</a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="wrap">
+    © 2026 «Український правопис» · Privacy Policy / Політика конфіденційності
+  </footer>
+</body>
+</html>
